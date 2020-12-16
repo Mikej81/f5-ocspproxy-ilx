@@ -2,7 +2,7 @@ var fs = require('fs');
 var shell = require('shelljs');
 var JsonDB = require('node-json-db');
 
-const caFolder = './ca/crl/';
+const caFolder = './crl/';
 
 fs.readdir(caFolder, (err, files) => {
   const crlFiles = files.filter(el => /\.crl$/.test(el))
